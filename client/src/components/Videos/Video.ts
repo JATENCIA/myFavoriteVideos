@@ -21,3 +21,5 @@ export interface Props {
   video: Video;
   loadVideos: () => void;
 }
+
+export {};
