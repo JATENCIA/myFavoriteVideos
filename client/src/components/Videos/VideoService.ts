@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Video } from "./Video";
 
 // const apiUrl = "http://localhost:3001";
 const apiUrl = "https://my-favorite-videos.vercel.app";
