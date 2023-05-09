@@ -1,0 +1,28 @@
+@urlApi = http://localhost:3001
+
+### get all video
+GET {{urlApi}}/videos
+
+### get single video
+GET {{urlApi}}/videos/6416225ea6c9f4a2c39ca928
+
+### create a video
+POST {{urlApi}}/videos
+Content-Type: application/json
+
+{
+  "url":"https://youtu.be/Evu9xM4omQo",
+  "title":"Rock",
+  "description":" Éxitos del rock clásico"
+}
+
+### update a video
+PUT {{urlApi}}/videos/6416225ea6c9f4a2c39ca928
+Content-Type: application/json
+
+{
+  "title":"typescript"
+}
+
+### delete a video
+DELETE {{urlApi}}/videos/641627d2c660efb3cc119c67
