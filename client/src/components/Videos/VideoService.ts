@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const apiUrl = "http://localhost:3001";
-const apiUrl = "https://my-favorite-videos.vercel.app/";
+const apiUrl = "https://my-favorite-videos.vercel.app";
 
 /**
  * This function retrieves a list of videos from an API using Axios in TypeScript.
