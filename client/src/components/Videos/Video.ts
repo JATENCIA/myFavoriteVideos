@@ -4,7 +4,7 @@ is a required string, while the `_id`, `createdAt`, and `updatedAt` properties a
 be either a string or a Date object. The `title` and `description` properties are also required
 strings. This interface can be used to ensure that any object representing a video in the code
 follows this structure. */
-interface Video {
+export interface Video {
   url: string;
   _id?: string;
   title: string;
@@ -17,7 +17,7 @@ interface Video {
 should be an object that follows the structure defined by the `interface Video`. This can be used to
 ensure that any component or function that receives a `Props` object with a `video` property will
 expect it to be a valid `Video` object. */
-interface Props {
+export interface Props {
   video: Video;
   loadVideos: () => void;
 }
