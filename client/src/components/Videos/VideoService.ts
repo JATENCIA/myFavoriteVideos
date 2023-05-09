@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const apiUrl = "http://localhost:3001";
+// const apiUrl = "http://localhost:3001";
+const apiUrl = "https://my-favorite-videos.vercel.app/";
 
 /**
  * This function retrieves a list of videos from an API using Axios in TypeScript.
@@ -57,6 +58,14 @@ export const putVideo = async (id: string, video: Video) => {
   return dataApi;
 };
 
+/**
+ * This function deletes a video from an API using its ID.
+ * @param {string} id - The `id` parameter is a string representing the unique identifier of a video
+ * that needs to be deleted from the server.
+ * @returns The `deleteVideo` function is returning a promise that resolves to the result of the
+ * `axios.delete` call, which is an object containing information about the HTTP response from the
+ * server.
+ */
 export const deleteVideo = async (id: string) => {
   const dataApi = await axios.delete(`${apiUrl}/videos/${id}`);
   return dataApi;
