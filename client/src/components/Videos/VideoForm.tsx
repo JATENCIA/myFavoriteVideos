@@ -2,6 +2,7 @@ import React, { ChangeEvent, FormEvent, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import * as videoService from "./VideoService";
 import { toast } from "react-toastify";
+import { Video } from "./Video";
 
 type InputChange = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
 

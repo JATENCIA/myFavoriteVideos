@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./VideoItem.css";
 import { servicesVersion } from "typescript";
 import * as videoService from "./VideoService";
+import { Props } from "./Video";
+
 const VideoItem = ({ video, loadVideos }: Props) => {
   const navigate = useNavigate();
 
